@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kind.support.reflections.ReflectorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-10-29T12:29:29" hostname="TON-HCSHBH2" time="0.003">
+  <properties/>
+  <testcase name="testGet" classname="kind.support.reflections.ReflectorTest" time="0.002"/>
+  <testcase name="testGetMethodWithArguments" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <testcase name="testHasGetter" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <testcase name="testGetMethodWithArgumentsButNotGivenAny" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <testcase name="testGetMethod" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <testcase name="testGetMethodWithArgumentsOfWrongType" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <testcase name="testGetMethodWhenOneDoesntExist" classname="kind.support.reflections.ReflectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

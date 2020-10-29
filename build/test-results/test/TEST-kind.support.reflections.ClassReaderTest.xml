@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kind.support.reflections.ClassReaderTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-10-29T12:29:29" hostname="TON-HCSHBH2" time="0.007">
+  <properties/>
+  <testcase name="testHasInterfaceFalse" classname="kind.support.reflections.ClassReaderTest" time="0.001"/>
+  <testcase name="testIsInterfaceTrue" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasAccessibleConstructorTrue" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasProtectedConstructor" classname="kind.support.reflections.ClassReaderTest" time="0.001"/>
+  <testcase name="testHasAccessibleConstructorWhenConstructorIsPrivate" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testReadProp" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasNoArgPublicConstructor" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testIsSerializableFalse" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testIsInterfaceFalse" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasInterfaceTrue" classname="kind.support.reflections.ClassReaderTest" time="0.001"/>
+  <testcase name="testIsSerializableTrue" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasMethodTrue" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <testcase name="testHasMethodFalse" classname="kind.support.reflections.ClassReaderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
