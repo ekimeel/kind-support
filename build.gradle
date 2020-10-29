@@ -16,20 +16,19 @@ dependencies {
 }
 
 publishing {
-    publications {
-        create<MavenPublication>("default") {
-            from(components["java"])
-        }
-    }
-
     repositories {
         maven {
-            name = "GitHubPackages"
+            name = "${rootProject.name}-${version}"
             url = uri("https://maven.pkg.github.com/ekimeel/${rootProject.name}")
             credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                username = properties.get("github.actor") ?: System.getenv("GITHUB_ACTOR")
+                password = properties.get("github.token") ?: System.getenv("GITHUB_TOKEN")
             }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
 }
