@@ -17,7 +17,6 @@ public final class Coalesce {
     }
 
 
-
     public static <T> Optional<T> coalesce(NextSupplier<Optional<T>>... next) {
         return asList(next)
                 .stream()

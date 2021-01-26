@@ -142,6 +142,7 @@ public class Strings {
      * @param with
      * @return
      */
+    @Deprecated
     public static String replace(String str, String innerString, String with) {
         int c = 0;
         int i = str.indexOf(innerString, c);

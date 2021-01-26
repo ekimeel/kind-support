@@ -255,28 +255,6 @@ public class Lists {
         return b.toString();
     }
 
-    /**
-     * Creates a new instance of an array with the same size as the
-     * given list.
-     *
-     * @param <T>
-     * @param list
-     * @return a new instance of an array with the same size as the
-     * @throws NullPointerException if list is null
-     */
-    @SuppressWarnings("unchecked")
-    public static <T> T[] toArray(List<T> list) {
-        //TODO: JavaDoc
-        assertNotNull(list);
-        assertState(list.size() > 0, "Cannot create a new array from an empty generic list.");
-
-
-        //Class<T> clazz = Class<T>.newArrayList()//;
-
-
-        return (T[]) list.toArray(list.toArray());
-
-    }
 
     /**
      * Returns if the given list is empty

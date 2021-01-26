@@ -313,56 +313,6 @@ public class StringsTest {
         assertEquals("123", Strings.replace("123", "abc", "456"));
     }
 
-    @Test
-    public void testReplaceIfFasterThanStandardReplace() {
-        Timer timer = Timer.newInstance();
-
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            Strings.replace("123", "2", "5");
-
-        }
-        final long theKindWay1 = timer.stop();
-
-        timer = Timer.newInstance();
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            "123".replace("2", "5");
-        }
-        final long theJavaWay1 = timer.stop();
-
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            Strings.replace("123", "2", "5");
-
-        }
-        final long theKindWay2 = timer.stop();
-
-        timer = Timer.newInstance();
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            "123".replace("2", "5");
-        }
-        final long theJavaWay2 = timer.stop();
-
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            Strings.replace("123", "2", "5");
-
-        }
-        final long theRhythmWay3 = timer.stop();
-
-        timer = Timer.newInstance();
-        timer.start();
-        for (int i = 0; i < 10000; i++) {
-            "123".replace("2", "5");
-        }
-        final long theJavaWay3 = timer.stop();
-
-
-        assertTrue((theKindWay1 + theKindWay2 + theRhythmWay3) <= (theJavaWay1 + theJavaWay2 + theJavaWay3));
-
-    }
 
     @Test
     public void testContainsDigits() {

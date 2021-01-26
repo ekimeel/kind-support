@@ -13,39 +13,6 @@ import static org.junit.Assert.*;
 
 public class ListsTest {
 
-    @Test
-    public void testToArrayOnString() {
-
-        List<String> numbers = Lists.of("1", "2", "Hello", "4", "5");
-        String[] numbersInArray = Lists.toArray(numbers);
-
-        assertEquals(5, numbersInArray.length);
-
-        assertTrue(numbersInArray[0].equals("1"));
-        assertTrue(numbersInArray[1].equals("2"));
-        assertTrue(numbersInArray[2].equals("Hello"));
-        assertTrue(numbersInArray[3].equals("4"));
-        assertTrue(numbersInArray[4].equals("5"));
-    }
-
-    @Test
-    public void testToArray() {
-        List<Integer> numbers = Lists.of(1, 2, 3, 4, 5);
-        Integer[] numbersInArray = Lists.toArray(numbers);
-
-        assertEquals(5, numbersInArray.length);
-
-        assertTrue(numbersInArray[0] == 1);
-        assertTrue(numbersInArray[1] == 2);
-        assertTrue(numbersInArray[2] == 3);
-        assertTrue(numbersInArray[3] == 4);
-        assertTrue(numbersInArray[4] == 5);
-    }
-
-    @Test(expected = NullPointerException.class)
-    public void testToArrayWhenGivenNull() {
-        Lists.toArray(null);
-    }
 
     @Test
     public void testToStringOnEmptyList() {
